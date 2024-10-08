@@ -1,0 +1,101 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "dbef9ea3-9f27-4a48-a450-658868cae78c",
+  "location" : "warehouse/iceberg/bitcoins/DataHistoricalCoins",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1728354667978,
+  "last-column-id" : 6,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "symbol",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "date",
+      "required" : false,
+      "type" : "timestamptz"
+    }, {
+      "id" : 5,
+      "name" : "price",
+      "required" : false,
+      "type" : "decimal(38, 10)"
+    }, {
+      "id" : 6,
+      "name" : "vsCurrency",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "criforer",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 4620837041297199136,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 4620837041297199136,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 4620837041297199136,
+    "timestamp-ms" : 1728354667978,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1728354661691",
+      "added-data-files" : "8",
+      "added-records" : "273",
+      "added-files-size" : "18436",
+      "changed-partition-count" : "1",
+      "total-records" : "273",
+      "total-files-size" : "18436",
+      "total-data-files" : "8",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.3",
+      "app-id" : "local-1728354661691",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.6.1 (commit 8e9d59d299be42b0bca9461457cd1e95dbaad086)"
+    },
+    "manifest-list" : "warehouse/iceberg/bitcoins/DataHistoricalCoins/metadata/snap-4620837041297199136-1-e81ca968-a3ed-4839-82e1-206db320f235.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1728354667978,
+    "snapshot-id" : 4620837041297199136
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1728354665299,
+    "metadata-file" : "warehouse/iceberg/bitcoins/DataHistoricalCoins/metadata/v1.metadata.json"
+  } ]
+}
