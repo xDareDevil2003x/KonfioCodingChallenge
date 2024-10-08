@@ -27,3 +27,7 @@ print(sys.path)
 3. Por ultimo, cuando ya se tenga todo configurado, se debe ir al archivo main.py en la raiz de la carpeta de ejecucion y ejecutar el proceso. El main toma recibe dos parametros String referentes a la fecha de inicio de ejecucion del programa y a la fecha de finalizacion del mismo, se deben colocar en formato DD-MM-YYYY
 
 *PD: en el mismo codigo se adicionaron comentarios con respecto a la ejecucion del proceso*
+
+## ASSUMPTIONS
+- Se asume que el proceso se ejecuta en una maquina Windows 11
+- Al ser un ejercicio de Lab, la API de Coingecko utilizada tiene restricciones de la data procesada
